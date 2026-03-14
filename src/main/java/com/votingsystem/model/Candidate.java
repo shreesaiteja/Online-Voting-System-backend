@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 import jakarta.persistence.Table;
 
 @Entity
@@ -24,7 +25,7 @@ public class Candidate {
 
     private String manifesto;
 
-    @Column(columnDefinition = "LONGTEXT")
+    @Lob
     private String imageDataUrl;
 
     private String constituency;

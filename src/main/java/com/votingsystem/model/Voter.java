@@ -6,6 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 
@@ -35,7 +36,7 @@ public class Voter {
     @Column(name = "voter_id", unique = true)
     private String voterId;
 
-    @Column(columnDefinition = "LONGTEXT")
+    @Lob
     private String photoDataUrl;
 
     private String caste;
