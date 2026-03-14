@@ -13,18 +13,22 @@ public class CorsConfig {
 
     @Bean
     public CorsFilter corsFilter() {
+
         CorsConfiguration configuration = new CorsConfiguration();
+
         configuration.setAllowCredentials(true);
-        configuration.setAllowedOrigins(List.of(
-                "http://localhost:5173",
-                "http://localhost:3000",
-                "https://online-voting-system-frontend-v8pu.onrender.com"
+
+        configuration.setAllowedOriginPatterns(List.of(
+                "http://localhost:*",
+                "https://*.onrender.com"
         ));
+
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowedMethods(List.of("*"));
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
+
         return new CorsFilter(source);
     }
 }
