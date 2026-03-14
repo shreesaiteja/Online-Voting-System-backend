@@ -44326,3 +44326,4742 @@ Hibernate:
     order by
         v1_0.vote_time
 2026-03-14T13:28:55.685+05:30  WARN 27796 --- [online-voting-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m52s316ms498µs).
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    where
+        upper(a1_0.username)=upper(?)
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.address,
+        v1_0.age,
+        v1_0.caste,
+        v1_0.created_at,
+        v1_0.date_of_birth,
+        v1_0.district,
+        v1_0.eligible,
+        v1_0.email,
+        v1_0.has_voted,
+        v1_0.name,
+        v1_0.nationality,
+        v1_0.password,
+        v1_0.password_reset_approved,
+        v1_0.password_reset_requested,
+        v1_0.phone_number,
+        v1_0.photo_data_url,
+        v1_0.profile_details,
+        v1_0.role,
+        v1_0.sex,
+        v1_0.state,
+        v1_0.voter_id 
+    from
+        voters v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        count(*) 
+    from
+        votes v1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.constituency,
+        c1_0.image_data_url,
+        c1_0.manifesto,
+        c1_0.name,
+        c1_0.party,
+        c1_0.symbol,
+        c1_0.vote_count 
+    from
+        candidates c1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.election_end_time,
+        a1_0.election_start_time,
+        a1_0.election_status,
+        a1_0.name,
+        a1_0.password,
+        a1_0.username,
+        a1_0.winner_name 
+    from
+        admins a1_0 
+    order by
+        a1_0.id 
+    limit
+        ?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.candidate_id,
+        v1_0.vote_time,
+        v1_0.voter_id 
+    from
+        votes v1_0 
+    order by
+        v1_0.vote_time

@@ -4,6 +4,8 @@ import com.votingsystem.dto.LoginRequest;
 import com.votingsystem.model.Voter;
 import com.votingsystem.service.AdminService;
 import com.votingsystem.service.VoterService;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +15,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/auth")
+@CrossOrigin(origins="https://online-voting-system-frontend-v8pu.onrender.com")
 public class AuthController {
 
     private final VoterService voterService;

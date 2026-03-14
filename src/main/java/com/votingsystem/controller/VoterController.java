@@ -3,6 +3,7 @@ package com.votingsystem.controller;
 import com.votingsystem.config.SimpleTokenService;
 import com.votingsystem.service.VoterService;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,6 +17,7 @@ import com.votingsystem.model.Voter;
 
 @RestController
 @RequestMapping("/api/voter")
+@CrossOrigin(origins="https://online-voting-system-frontend-v8pu.onrender.com")
 public class VoterController {
 
     private final VoterService voterService;

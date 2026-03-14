@@ -9,6 +9,7 @@ import com.votingsystem.service.CandidateService;
 import com.votingsystem.service.VoteService;
 import com.votingsystem.service.VoterService;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,6 +24,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/admin")
+@CrossOrigin(origins="https://online-voting-system-frontend-v8pu.onrender.com")
 public class AdminController {
 
     private final AdminService adminService;

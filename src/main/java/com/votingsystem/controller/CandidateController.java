@@ -4,6 +4,7 @@ import com.votingsystem.config.SimpleTokenService;
 import com.votingsystem.model.Candidate;
 import com.votingsystem.service.CandidateService;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,6 +20,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/candidates")
+@CrossOrigin(origins="https://online-voting-system-frontend-v8pu.onrender.com")
 public class CandidateController {
 
     private final CandidateService candidateService;
