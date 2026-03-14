@@ -1,0 +1,39 @@
+CREATE TABLE IF NOT EXISTS admins (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    name VARCHAR(120) NOT NULL,
+    election_status VARCHAR(30) NOT NULL DEFAULT 'OPEN',
+    winner_name VARCHAR(120)
+);
+
+CREATE TABLE IF NOT EXISTS voters (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(150) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    age INT,
+    voter_id VARCHAR(100) UNIQUE,
+    role VARCHAR(20) NOT NULL DEFAULT 'VOTER',
+    eligible BIT NOT NULL DEFAULT 0,
+    has_voted BIT NOT NULL DEFAULT 0,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS candidates (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(150) NOT NULL,
+    party VARCHAR(150),
+    symbol VARCHAR(25),
+    manifesto VARCHAR(255),
+    vote_count BIGINT NOT NULL DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS votes (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    voter_id BIGINT NOT NULL,
+    candidate_id BIGINT NOT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_votes_voter FOREIGN KEY (voter_id) REFERENCES voters(id),
+    CONSTRAINT fk_votes_candidate FOREIGN KEY (candidate_id) REFERENCES candidates(id)
+);
